@@ -10,9 +10,13 @@
   "license": "MIT",
   "dependencies": {
     "camelcase": "^5.0.0",
+    "chalk": "^2.4.2",
     "commander": "^2.19.0",
     "inquirer": "^6.2.2",
-    "mustache": "^3.0.1"
+    "mustache": "^3.0.1",
+    "node-emoji": "^1.8.1",
+    "rimraf": "^2.6.3",
+    "tree-node-cli": "^1.2.5"
   },
   "bin": {
     "rnc": "./cli.js"

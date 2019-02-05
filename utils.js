@@ -2,10 +2,18 @@ const fs = require('fs');
 const path = require('path');
 const camelCase = require('camelcase');
 const mustache = require('mustache');
+const emoji = require('node-emoji');
+const tree = require('tree-node-cli');
+const rimraf = require('rimraf');
+const chalk = require('chalk');
+
+const checkDirExistence = dirPath => {
+  return fs.existsSync(dirPath);
+}
 
 const ensureDirectoryExistence = filePath  => {
   const dirname = path.dirname(filePath);
-  if (fs.existsSync(dirname)) {
+  if (checkDirExistence(dirname)) {
     return true;
   }
   ensureDirectoryExistence(dirname);
@@ -46,10 +54,49 @@ const kebab2Camel = kebab => {
   return camelCase(kebab.replace('react-native-', ''), { pascalCase: true });
 }
 
+const log = (type, params) => {
+  if (type === 'ERR_DIR_EXIST') {
+    console.log(emoji.get('x'), `Aborted: The directory <${params.name}> has already existed.`);
+    console.log(emoji.get('information_desk_person'), 'Please try again with a different directory name.');
+  } else if (type === 'ERR_REASON') {
+    console.log(emoji.get('x'), `Aborted: ${params.reason}`);
+  } else if (type === 'DONE') {
+    console.log(tree(params.writeDir, {
+      allFiles: true,
+      dirsFirst: true
+    }));
+    console.log(emoji.get('dizzy'), `${chalk.bold('Done in ')}${chalk.green(params.time)}`);
+    console.log(emoji.get('information_desk_person'), `${chalk.bold('Quick Tips')}`);
+    console.log(`   ${chalk.bold('1.')} ${chalk.green(' Run Tests')}`);
+    console.log(`   •  $ cd ${params.name}`);
+    console.log('   •  $ yarn');
+    console.log('   •  $ yarn test');
+    console.log(`   ${chalk.bold('2.')} ${chalk.green(' Dev / View Demo')}`);
+    console.log(`   •  $ cd ${params.name}/demo`);
+    console.log('   •  $ yarn');
+    console.log('   •  $ yarn start');
+    console.log(`${chalk.gray('*  If you prefer ')}${chalk.bold.grey('npm')}${chalk.gray(', use ')}${chalk.bold.gray('npm')}${chalk.gray('.')}`);
+  }
+}
+
+const hrtime2ms = hrtime => {
+  return (((hrtime[0] * 1e9) + hrtime[1]) / 1e6).toFixed(2);
+}
+
+const deleteDir = dirPath => {
+  if (checkDirExistence(dirPath)) {
+    rimraf.sync(dirPath);
+  }
+}
+
 module.exports = {
+  checkDirExistence,
   writeToFile,
   walkSync,
   mustached,
   fileHandler,
-  kebab2Camel
+  kebab2Camel,
+  log,
+  hrtime2ms,
+  deleteDir
 }
