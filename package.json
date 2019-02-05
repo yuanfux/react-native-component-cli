@@ -1,0 +1,20 @@
+{
+  "name": "react-native-component-cli",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yuan Fu",
+  "license": "MIT",
+  "dependencies": {
+    "camelcase": "^5.0.0",
+    "commander": "^2.19.0",
+    "inquirer": "^6.2.2",
+    "mustache": "^3.0.1"
+  },
+  "bin": {
+    "rnc": "./cli.js"
+  }
+}
