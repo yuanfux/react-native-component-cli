@@ -46,8 +46,17 @@ const mustached = (filePath, tags) => {
 }
 
 const fileHandler = (writeDir, moduleDir, tags) => fileRelativePath => {
-  const content = mustached(path.resolve(moduleDir, fileRelativePath), tags);
-  writeToFile(path.resolve(writeDir, fileRelativePath), content);
+  let content;
+  let normalizedFileRelativePath;
+  const hbsRegex = /\.hbs$/;
+  if (hbsRegex.test(fileRelativePath)) {
+    content = mustached(path.resolve(moduleDir, fileRelativePath), tags);
+    normalizedFileRelativePath = fileRelativePath.replace(hbsRegex, '');
+  } else {
+    content = fs.readFileSync(path.resolve(moduleDir, fileRelativePath), 'utf8');
+    normalizedFileRelativePath = fileRelativePath;
+  }
+  writeToFile(path.resolve(writeDir, normalizedFileRelativePath), content);
 }
 
 const kebab2Camel = kebab => {
