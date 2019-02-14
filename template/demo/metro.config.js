@@ -1,11 +1,12 @@
 const path = require('path');
 const blacklist = require('metro-config/src/defaults/blacklist');
+const escapeRegexString = require('escape-regex-string');
 
 module.exports = {
   resolver: {
     blacklistRE: blacklist([
       new RegExp(
-        `^${escape(path.resolve(__dirname, '..', 'node_modules'))}\\/.*$`,
+        `^${escapeRegexString(path.resolve(__dirname, '..', 'node_modules'))}\\/.*$`,
       ),
     ]),
     providesModuleNodeModules: [

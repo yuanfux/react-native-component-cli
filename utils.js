@@ -65,8 +65,8 @@ const kebab2Camel = kebab => {
 
 const log = (type, params) => {
   if (type === 'ERR_DIR_EXIST') {
-    console.log(emoji.get('x'), `Aborted: The directory <${params.name}> has already existed.`);
-    console.log(emoji.get('information_desk_person'), 'Please try again with a different directory name.');
+    console.log(emoji.get('x'), ` Aborted: The directory <${params.name}> has already existed.`);
+    console.log(emoji.get('point_right'), ' Please try again with a different directory name.');
   } else if (type === 'ERR_REASON') {
     console.log(emoji.get('x'), `Aborted: ${params.reason}`);
   } else if (type === 'DONE') {
@@ -74,17 +74,17 @@ const log = (type, params) => {
       allFiles: true,
       dirsFirst: true
     }));
-    console.log(emoji.get('dizzy'), `${chalk.bold('Done in ')}${chalk.green(params.time)}`);
-    console.log(emoji.get('information_desk_person'), `${chalk.bold('Quick Tips')}`);
-    console.log(`   ${chalk.bold('1.')} ${chalk.green(' Run Tests')}`);
-    console.log(`   •  $ cd ${params.name}`);
-    console.log('   •  $ yarn');
-    console.log('   •  $ yarn test');
-    console.log(`   ${chalk.bold('2.')} ${chalk.green(' Dev / View Demo')}`);
-    console.log(`   •  $ cd ${params.name}/demo`);
-    console.log('   •  $ yarn');
-    console.log('   •  $ yarn start');
-    console.log(`${chalk.gray('*  If you prefer ')}${chalk.bold.grey('npm')}${chalk.gray(', use ')}${chalk.bold.gray('npm')}${chalk.gray('.')}`);
+    console.log(emoji.get('sparkles'), ` ${chalk.bold('Done in ')}${chalk.green(params.time)}`);
+    console.log(emoji.get('point_right'), ` ${chalk.bold('Quick Tips')}`);
+    console.log(`    ${chalk.bold('1.')} ${chalk.green(' Run Tests')}`);
+    console.log(`    •  $ cd ${params.name}`);
+    console.log('    •  $ yarn');
+    console.log('    •  $ yarn test');
+    console.log(`    ${chalk.bold('2.')} ${chalk.green(' Dev / View Demo')}`);
+    console.log(`    •  $ cd ${params.name}/demo`);
+    console.log('    •  $ yarn');
+    console.log('    •  $ yarn start');
+    console.log(`${chalk.gray('*   If you prefer ')}${chalk.bold.grey('npm')}${chalk.gray(', use ')}${chalk.bold.gray('npm')}${chalk.gray('.')}`);
   }
 }
 
