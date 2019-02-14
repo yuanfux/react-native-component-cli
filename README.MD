@@ -1,4 +1,5 @@
 
+
 # react-native-component-cli
 > scaffold a react native component within seconds
 
@@ -50,6 +51,7 @@ $ rnc create
 	$ npm install
 	$ npm start
 	```
+> To integrate Travis CI, you might need to [setup Travis CI](https://docs.travis-ci.com/user/tutorial/) for your Github Account
 
 #### Repo Detail
 ```
