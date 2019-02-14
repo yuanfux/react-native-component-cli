@@ -2,7 +2,7 @@
 > scaffold a react native component within seconds
 
 <p align="right">
-	<img src="https://user-images.githubusercontent.com/6414178/52773284-8c9e4400-3075-11e9-8b3b-45ed494f70a1.gif" width="500" />
+	<img src="https://user-images.githubusercontent.com/6414178/52773284-8c9e4400-3075-11e9-8b3b-45ed494f70a1.gif" width="70%" />
 </p>
 
 ### Why?
