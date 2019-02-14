@@ -24,13 +24,13 @@ $ rnc create
 </p>
 
 #### 2. Run Test
-- by `yarn`
+- by **yarn**
 	```bash
 	$ cd path-to-your-component
 	$ yarn
 	$ yarn test
 	```
-- by `npm`
+- by **npm**
 	```bash
 	$ cd path-to-your-component
 	$ npm install
@@ -38,13 +38,13 @@ $ rnc create
 	```
 
 #### 3. Start Dev / View Demo
-- by `yarn`
+- by **yarn**
 	```bash
 	$ cd path-to-your-component/demo
 	$ yarn
 	$ yarn start
 	```
-- by `npm`
+- by **npm**
 	```bash
 	$ cd path-to-your-component/demo
 	$ npm install
