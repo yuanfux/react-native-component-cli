@@ -24,32 +24,32 @@ $ rnc create
 </p>
 
 #### 2. Run Test
-by `yarn`
-```bash
-$ cd path-to-your-component
-$ yarn
-$ yarn test
-```
-by `npm`
-```bash
-$ cd path-to-your-component
-$ npm install
-$ npm test
-```
+- by `yarn`
+	```bash
+	$ cd path-to-your-component
+	$ yarn
+	$ yarn test
+	```
+- by `npm`
+	```bash
+	$ cd path-to-your-component
+	$ npm install
+	$ npm test
+	```
 
 #### 3. Start Dev / View Demo
-by `yarn`
-```bash
-$ cd path-to-your-component/demo
-$ yarn
-$ yarn start
-```
-by `npm`
-```bash
-$ cd path-to-your-component/demo
-$ npm install
-$ npm start
-```
+- by `yarn`
+	```bash
+	$ cd path-to-your-component/demo
+	$ yarn
+	$ yarn start
+	```
+- by `npm`
+	```bash
+	$ cd path-to-your-component/demo
+	$ npm install
+	$ npm start
+	```
 
 #### Repo Detail
 ```
