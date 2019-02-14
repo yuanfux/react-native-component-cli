@@ -24,6 +24,7 @@ $ rnc create
 </p>
 
 #### Run Test
+by `yarn`
 ```bash
 $ cd path-to-your-component
 
@@ -31,12 +32,52 @@ $ yarn
 
 $ yarn test
 ```
+by `npm`
+```bash
+$ cd path-to-your-component
+
+$ npm install
+
+$ npm test
+```
 
 #### Start Dev / View Demo
+by `yarn`
 ```bash
 $ cd path-to-your-component/demo
 
 $ yarn
 
 $ yarn start
+```
+by `npm`
+```bash
+$ cd path-to-your-component/demo
+
+$ npm install
+
+$ npm start
+```
+
+#### Repo Structure Detail
+```
+react-native-example-component
+├── demo                // contains an Expo project for dev
+│   ├── .gitignore      // git ignore for the Expo project
+│   ├── .watchmanconfig // the watchman config
+│   ├── App.js          // the main file for develop the Expo project
+│   ├── app.json        // the Expo project config
+│   ├── babel.config.js // the babel config for the Expo project
+│   ├── metro.config.js // the metro bundler config
+│   └── package.json    // package.json for the Expo project
+├── src                 // contains source file(s) for the component
+│   └── index.js
+├── test                // contains test file(s) for the component
+│   └── index.test.js 
+├── .eslintrc.js        // the eslint config for the component
+├── babel.config.js     // the babel config for the component
+├── .travis.yml         // the Travis CI config
+├── README.md           // README for the component
+├── .gitignore          // git ignore for the component
+└── package.json        // pacakge.json for the component
 ```
