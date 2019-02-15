@@ -13,8 +13,10 @@ module.exports = {
       'react-native',
       'react',
       'prop-types',
-      '@babel/runtime',
     ],
+    extraNodeModules: {
+      '@babel/runtime': path.resolve(__dirname, 'node_modules/@babel/runtime'),
+    },
   },
   projectRoot: path.resolve(__dirname),
   watchFolders: [

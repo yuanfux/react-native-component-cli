@@ -1,10 +1,10 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "./node_modules/expo-cli/bin/expo.js start",
-    "android": "./node_modules/expo-cli/bin/expo.js start --android",
-    "ios": "./node_modules/expo-cli/bin/expo.js start --ios",
-    "eject": "./node_modules/expo-cli/bin/expo.js eject"
+    "start": "node node_modules/expo-cli/bin/expo.js start",
+    "android": "node node_modules/expo-cli/bin/expo.js start --android",
+    "ios": "node node_modules/expo-cli/bin/expo.js start --ios",
+    "eject": "node node_modules/expo-cli/bin/expo.js eject"
   },
   "dependencies": {
     "expo": "^32.0.0",
