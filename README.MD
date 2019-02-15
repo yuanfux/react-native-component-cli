@@ -26,6 +26,9 @@ $ rnc create
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/6414178/52773284-8c9e4400-3075-11e9-8b3b-45ed494f70a1.gif" width="450" />
 </p>
+<p align="center">
+	demo
+</p>
 
 #### 2. Run Test
 - by **yarn**
