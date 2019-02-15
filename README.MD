@@ -4,7 +4,7 @@
 > scaffold a react native component within seconds
 
 <p align="center">
-	<img src="https://user-images.githubusercontent.com/6414178/52833433-85c80d80-3117-11e9-8859-922bc95badd0.png" width="250" />
+	<img src="https://user-images.githubusercontent.com/6414178/52834168-587d5e80-311b-11e9-8e92-78da8db785bc.png" width="150" />
 </p>
 
 ### Why?
