@@ -1,10 +1,10 @@
 
+# react-native-component-cli
+![](https://img.shields.io/npm/v/react-native-component-cli.svg?style=flat-square) ![](https://img.shields.io/github/issues/yuanfux/react-native-component-cli.svg?style=flat-square) ![](https://img.shields.io/snyk/vulnerabilities/github/yuanfux/react-native-component-cli.svg?style=flat-square) ![](https://img.shields.io/npm/dt/react-native-component-cli.svg?style=flat-square) ![](https://img.shields.io/maintenance/yes/2019.svg?style=flat-square) ![](https://img.shields.io/npm/l/react-native-component-cli.svg?style=flat-square)
+
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/6414178/52834497-20771b00-311d-11e9-9426-be961cced3d6.png" width="150" />
 </p>
-
-# react-native-component-cli
-![](https://img.shields.io/npm/v/react-native-component-cli.svg?style=flat-square) ![](https://img.shields.io/github/issues/yuanfux/react-native-component-cli.svg?style=flat-square) ![](https://img.shields.io/snyk/vulnerabilities/github/yuanfux/react-native-component-cli.svg?style=flat-square) ![](https://img.shields.io/npm/dt/react-native-component-cli.svg?style=flat-square) ![](https://img.shields.io/maintenance/yes/2019.svg?style=flat-square) ![](https://img.shields.io/npm/l/react-native-component-cli.svg?style=flat-square)
 
 ### Why?
 Many repositories of react native component are not well structured and lack of basic functionalities including testing, development, continuous integration... `react-native-component-cli` helps to instantly scaffold a react native component repository with following features:
