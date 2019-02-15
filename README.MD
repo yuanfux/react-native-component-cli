@@ -3,6 +3,10 @@
 # react-native-component-cli
 > scaffold a react native component within seconds
 
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/6414178/52833433-85c80d80-3117-11e9-8859-922bc95badd0.png" width="250" />
+</p>
+
 ### Why?
 Many repositories of react native component are not well structured and lack of basic functionalities including testing, development, continuous integration... `react-native-component-cli` helps to instantly scaffold a react native component repository with following features:
 1. **Dev locally** - Easy local dev with minimum dependencies
