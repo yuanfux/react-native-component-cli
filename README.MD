@@ -21,7 +21,7 @@ $ npm install react-native-component-cli -g
 ```
 
 ## Usage
-### 1. Create & Config
+### 1. Create
 ```bash
 $ rnc create
 ```
