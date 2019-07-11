@@ -2,7 +2,7 @@
 ![](https://img.shields.io/npm/v/react-native-component-cli.svg?style=flat-square) ![](https://img.shields.io/github/issues/yuanfux/react-native-component-cli.svg?style=flat-square) ![](https://img.shields.io/snyk/vulnerabilities/github/yuanfux/react-native-component-cli.svg?style=flat-square) ![](https://img.shields.io/npm/dt/react-native-component-cli.svg?style=flat-square) ![](https://img.shields.io/npm/l/react-native-component-cli.svg?style=flat-square) ![](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square) ![](https://img.shields.io/maintenance/yes/2019.svg?style=flat-square)
 
 <p align="center">
-	<img src="https://user-images.githubusercontent.com/6414178/52834497-20771b00-311d-11e9-9426-be961cced3d6.png" width="150" />
+	<img src="https://user-images.githubusercontent.com/6414178/61050130-d585d900-a418-11e9-9cf6-14b2696ac3b9.png" width="220" />
 </p>
 
 ## Why?
