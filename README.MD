@@ -21,7 +21,7 @@ $ npm install react-native-component-cli -g
 ```
 
 ## Usage
-#### 1. Create & Config
+### 1. Create & Config
 ```bash
 $ rnc create
 ```
@@ -29,7 +29,7 @@ $ rnc create
 	<img title="demo" src="https://user-images.githubusercontent.com/6414178/52773284-8c9e4400-3075-11e9-8b3b-45ed494f70a1.gif" width="450" />
 </p>
 
-#### 2. Run Test
+### 2. Run Test
 - by **yarn**
 	```bash
 	$ cd path-to-your-component
@@ -43,7 +43,7 @@ $ rnc create
 	$ npm test
 	```
 
-#### 3. Start Dev / View Demo
+### 3. Start Dev / View Demo
 - by **yarn**
 	```bash
 	$ cd path-to-your-component/demo
