@@ -7,14 +7,14 @@
     "eject": "node node_modules/expo-cli/bin/expo.js eject"
   },
   "dependencies": {
-    "expo": "^32.0.0",
-    "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz"
+    "expo": "^33.0.0",
+    "react": "16.8.3",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0",
     "escape-regex-string": "^1.0.6",
-    "expo-cli": "^2.10.1"
+    "expo-cli": "^2.21.2"
   },
   "private": true
 }

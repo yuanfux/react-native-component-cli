@@ -9,9 +9,9 @@
 ## Why?
 Many repositories of react native component are not well structured and lack of basic functionalities including testing, development, continuous integration... `react-native-component-cli` helps to instantly scaffold a react native component repository with following features:
 1. **Dev locally** - Easy local dev with minimum dependencies
-2. **Test** - Instantly test and get coverage report
-3. **Lint** - Lint source code with ready-to-go lint rules
-4. **CI** - Auto workflow for every commit
+2. **Test** - Fully test component with Enzyme
+3. **Lint** - Lint source code with ready-to-go rules
+4. **CI** - Fill in the missing parts in your CI workflow
 
 ## Install
 ```bash
@@ -54,7 +54,6 @@ $ rnc create
 	$ npm install
 	$ npm start
 	```
-> To integrate Travis CI, you might need to [setup Travis CI](https://docs.travis-ci.com/user/tutorial/) for your Github Account
 
 ## Repo Detail
 ```
@@ -73,7 +72,7 @@ react-native-example-component
 │   └── index.test.js 
 ├── .eslintrc.js        // the eslint config for the component
 ├── babel.config.js     // the babel config for the component
-├── .travis.yml         // the Travis CI config
+├── setup-tests.js      // the jest-setup file for Enzyme
 ├── README.md           // README for the component
 ├── .gitignore          // git ignore for the component
 └── package.json        // pacakge.json for the component
@@ -81,4 +80,3 @@ react-native-example-component
 
 ## License
 MIT
-
