@@ -3,7 +3,7 @@
     "name": "react-native-demo-app",
     "slug": "react-native-demo-app",
     "privacy": "public",
-    "sdkVersion": "32.0.0",
+    "sdkVersion": "33.0.0",
     "packagerOpts": {
       "projectRoots": "",
       "config": "metro.config.js"
