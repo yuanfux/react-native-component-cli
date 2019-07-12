@@ -2,5 +2,5 @@ language: node_js
 node_js:
     - "node"
 script:
-    - node ./cli.js
-    - pwd
+    - ./cli.js create
+    - test
