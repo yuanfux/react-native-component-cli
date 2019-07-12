@@ -29,57 +29,57 @@ react-native-test-component
 `;
 
 const inputs =[
-	'react-native-test-component',
-	'\x0D',
-	'1.0.0',
-	'\x0D',
-	'A test component',
-	'\x0D',
-	'https://github.com/someone/react-native-test-component',
-	'\x0D',
-	'someone',
-	'\x0D',
-	'MIT',
-	'\x0D'
+'react-native-test-component',
+'\x0D',
+'1.0.0',
+'\x0D',
+'A test component',
+'\x0D',
+'https://github.com/someone/react-native-test-component',
+'\x0D',
+'someone',
+'\x0D',
+'MIT',
+'\x0D'
 ];
 
 describe('react-native-component-cli', function() {
   describe('#create', function() {
     it('should create expected folder structure', function(done) {
-    	// set 10s timeout
-    	this.timeout(10000);
+      // set 10s timeout
+      this.timeout(10000);
 
-    	// create sub process
-    	const sub = spawn('./cli.js', ['create'], { stdio: [null, null, null] });
+      // create sub process
+      const sub = spawn('./cli.js', ['create'], { stdio: [null, null, null] });
 
-    	// set coding
-		sub.stdin.setEncoding('utf-8');
+      // set coding
+      sub.stdin.setEncoding('utf-8');
 
-		// async input
-		const delayedLoop = (index) => {
-			if (index < inputs.length) {
-			  setTimeout(function() {
-			    sub.stdin.write(inputs[index]);
-			    delayedLoop(index + 1);
-			  }, 200);
-			} else {
-			  sub.stdin.end();
-			}
-		};
+    // async input
+    const delayedLoop = (index) => {
+      if (index < inputs.length) {
+        setTimeout(function() {
+          sub.stdin.write(inputs[index]);
+          delayedLoop(index + 1);
+        }, 200);
+      } else {
+        sub.stdin.end();
+      }
+    };
 
-		delayedLoop(0);
+    delayedLoop(0);
 
-		let result = ''
+    let result = ''
 
-		sub.stdout.on('data', (data) => {
-		  result += data;
-		});
-
-		sub.on('close', (code) => {
-		  done(assert(result.includes(FOLDER_STRUCTURE)));
-		  // delete created dir
-		  deleteDir(path.resolve(process.cwd(), inputs[0]));
-		});
+    sub.stdout.on('data', (data) => {
+      result += data;
     });
+
+    sub.on('close', (code) => {
+      done(assert(result.includes(FOLDER_STRUCTURE)));
+      // delete created dir
+      deleteDir(path.resolve(process.cwd(), inputs[0]));
+    });
+  });
   });
 });
