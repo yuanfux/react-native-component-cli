@@ -25,9 +25,8 @@ $ npm install react-native-component-cli -g
 ```bash
 $ rnc create
 ```
-<p align="center">
-	<img title="demo" src="https://user-images.githubusercontent.com/6414178/52773284-8c9e4400-3075-11e9-8b3b-45ed494f70a1.gif" width="450" />
-</p>
+
+![render1562903344619](https://user-images.githubusercontent.com/6414178/61101315-ed527100-a49b-11e9-82fa-90d7db18ea14.gif)
 
 ### 2. Run Test
 - by **yarn**
