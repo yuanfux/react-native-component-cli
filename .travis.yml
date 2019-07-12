@@ -3,5 +3,6 @@ node_js:
     - "node"
 script:
     - ./cli.js create
+    - wait
     - react-native-test-component
     - echo
