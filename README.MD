@@ -28,33 +28,25 @@ $ rnc create
 
 ![render1562903344619](https://user-images.githubusercontent.com/6414178/61101315-ed527100-a49b-11e9-82fa-90d7db18ea14.gif)
 
-### 2. Run Test
-- by **yarn**
-	```bash
-	$ cd path-to-your-component
-	$ yarn
-	$ yarn test
-	```
-- by **npm**
-	```bash
-	$ cd path-to-your-component
-	$ npm install
-	$ npm test
-	```
+### 2. Install Deps  
 
-### 3. Start Dev / View Demo
-- by **yarn**
-	```bash
-	$ cd path-to-your-component/demo
-	$ yarn
-	$ yarn start
-	```
-- by **npm**
-	```bash
-	$ cd path-to-your-component/demo
-	$ npm install
-	$ npm start
-	```
+```bash
+$ cd path-to-your-component
+$ npm install
+```
+
+### 3. Run Test
+
+```bash
+$ cd path-to-your-component
+$ npm test
+```
+
+###  4. Start Dev / View Demo
+```bash
+$ cd path-to-your-component/demo
+$ npm start
+```
 
 ## Output
 ```
@@ -81,6 +73,7 @@ react-native-example-component
 
 ## Roadmap
 - [x] Upgrade to Expo SDK 33.0 ( React Native 0.59.8 & React 16.8.3 )
+- [x] Upgrade to Expo SDK 35.0 ( React Native 0.59.8 & React 16.8.3 )
 
 ## License
 MIT

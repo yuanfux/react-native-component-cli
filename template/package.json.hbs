@@ -41,7 +41,8 @@
   },
   "scripts": {
     "test:lint": "./node_modules/.bin/eslint \"src/*.js\"",
-    "test": "npm run test:lint && ./node_modules/.bin/jest"
+    "test": "npm run test:lint && ./node_modules/.bin/jest",
+    "postinstall": "cd demo && npm install && cd .."
   },
   "jest": {
     "preset": "react-native",
