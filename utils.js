@@ -75,15 +75,20 @@ const log = (type, params) => {
       dirsFirst: true
     }));
     console.log(emoji.get('sparkles'), ` ${chalk.bold('Done in ')}${chalk.green(params.time)}`);
+    console.log();
     console.log(emoji.get('point_right'), ` ${chalk.bold('Quick Tips')}`);
-    console.log(`    ${chalk.bold('0.')} ${chalk.green(' Install Deps')}`);
-    console.log(`    •  $ cd ${params.name}`);
-    console.log('    •  $ npm install');
-    console.log(`    ${chalk.bold('1.')} ${chalk.green(' Run Tests')}`);
-    console.log('    •  $ npm test');
-    console.log(`    ${chalk.bold('2.')} ${chalk.green(' Dev / View Demo')}`);
-    console.log('    •  $ cd demo');
-    console.log('    •  $ npm start');
+    console.log();
+    console.log(`    ${chalk.bold('1.')} ${chalk.green('Install Deps')}`);
+    console.log(`        • $ cd ${params.name}`);
+    console.log('        • $ npm install');
+    console.log();
+    console.log(`    ${chalk.bold('2.')} ${chalk.green('Run Tests')}`);
+    console.log('        • $ npm test');
+    console.log();
+    console.log(`    ${chalk.bold('3.')} ${chalk.green('Dev / View Demo')}`);
+    console.log('        • $ cd demo');
+    console.log('        • $ npm start');
+    console.log();
   }
 }
 
