@@ -8,11 +8,11 @@
   },
   "dependencies": {
     "expo": "^35.0.0",
-    "react": "16.8.3",
+    "react": "16.8.6",
     "react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz"
   },
   "devDependencies": {
-    "babel-preset-expo": "^5.0.0",
+    "babel-preset-expo": "^6.0.0",
     "escape-regex-string": "^1.0.6",
     "expo-cli": "^3.0.4"
   },

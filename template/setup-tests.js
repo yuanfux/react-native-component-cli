@@ -33,13 +33,5 @@ copyProps(window, global);
  */
 Enzyme.configure({ adapter: new Adapter() });
 
-// suppress irrelevant errors
-// only show relevant ones
-const suppressedErrors = /(React does not recognize the.*prop on a DOM element|Unknown event handler property|is using incorrect casing|Received `true` for a non-boolean attribute `accessible`|The tag.*is unrecognized in this browser)/
-const realConsoleError = console.error
-console.error = message => {
-  if (message.match(suppressedErrors)) {
-    return
-  }
-  realConsoleError(message)
-}
+// Ignore React Web errors when using React Native
+console.error = (message) => message;

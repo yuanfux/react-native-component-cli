@@ -38,13 +38,13 @@ $ npm install
 ### 3. Run Test
 
 ```bash
-$ cd path-to-your-component
 $ npm test
 ```
 
 ###  4. Start Dev / View Demo
+
 ```bash
-$ cd path-to-your-component/demo
+$ cd demo
 $ npm start
 ```
 
@@ -73,7 +73,7 @@ react-native-example-component
 
 ## Roadmap
 - [x] Upgrade to Expo SDK 33.0 ( React Native 0.59.8 & React 16.8.3 )
-- [x] Upgrade to Expo SDK 35.0 ( React Native 0.59.8 & React 16.8.3 )
+- [x] Upgrade to Expo SDK 35.0 ( React Native 0.59.8 & React 16.8.6 )
 
 ## License
 MIT

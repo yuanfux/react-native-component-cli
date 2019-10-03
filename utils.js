@@ -80,10 +80,9 @@ const log = (type, params) => {
     console.log(`    •  $ cd ${params.name}`);
     console.log('    •  $ npm install');
     console.log(`    ${chalk.bold('1.')} ${chalk.green(' Run Tests')}`);
-    console.log(`    •  $ cd ${params.name}`);
     console.log('    •  $ npm test');
     console.log(`    ${chalk.bold('2.')} ${chalk.green(' Dev / View Demo')}`);
-    console.log(`    •  $ cd ${params.name}/demo`);
+    console.log('    •  $ cd demo');
     console.log('    •  $ npm start');
   }
 }
