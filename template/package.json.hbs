@@ -40,8 +40,8 @@
     "react-native": "0.59.8"
   },
   "scripts": {
-    "test:lint": "./node_modules/.bin/eslint \"src/*.js\"",
-    "test": "npm run test:lint && ./node_modules/.bin/jest",
+    "test:lint": "npx eslint \"src/*.js\"",
+    "test": "npm run test:lint && npx jest",
     "postinstall": "cd demo && npm install && cd .."
   },
   "jest": {

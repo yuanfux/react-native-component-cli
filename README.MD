@@ -20,6 +20,11 @@ Many repositories of react native component are not well structured and lack of 
 $ npm install react-native-component-cli -g
 ```
 
+If you are using an NPM version before 5.2.0, install `npx` with following cmd.
+```
+$ npm install npx -g
+```
+
 ## Usage
 ### 1. Create
 ```bash
