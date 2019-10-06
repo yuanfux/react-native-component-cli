@@ -16,9 +16,13 @@ Many repositories of react native component are not well structured and lack of 
 4. **CI** - Fill in the missing parts in your CI workflow
 
 ## Install
-Install `react-native-component-cli` & compatible `expo-cli`
 ```bash
-$ npm install react-native-component-cli expo-cli@^3.2.3 -g
+$ npm install react-native-component-cli -g
+```
+
+Installing `expo-cli` is optional but **recommended**
+```
+$ npm install expo-cli -g
 ```
 
 If you are using an NPM version before 5.2.0, install `npx` with the following cmd
