@@ -34,4 +34,4 @@ copyProps(window, global);
 Enzyme.configure({ adapter: new Adapter() });
 
 // Ignore React Web errors when using React Native
-console.error = (message) => message;
+console.error = message => message;

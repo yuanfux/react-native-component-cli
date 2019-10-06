@@ -11,8 +11,7 @@
   },
   "devDependencies": {
     "babel-preset-expo": "^6.0.0",
-    "escape-regex-string": "^1.0.6",
-    "expo-cli": "^3.0.4"
+    "escape-regex-string": "^1.0.6"
   },
   "private": true
 }

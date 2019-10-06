@@ -16,11 +16,12 @@ Many repositories of react native component are not well structured and lack of 
 4. **CI** - Fill in the missing parts in your CI workflow
 
 ## Install
+Install `react-native-component-cli` & compatible `expo-cli`
 ```bash
-$ npm install react-native-component-cli -g
+$ npm install react-native-component-cli expo-cli@^3.2.3 -g
 ```
 
-If you are using an NPM version before 5.2.0, install `npx` with the following cmd.
+If you are using an NPM version before 5.2.0, install `npx` with the following cmd
 ```
 $ npm install npx -g
 ```
@@ -36,7 +37,7 @@ $ rnc create
 ### 2. Install Deps  
 
 ```bash
-$ cd path-to-your-component
+$ cd path-to-your-react-native-component
 $ npm install
 ```
 
