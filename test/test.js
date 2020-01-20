@@ -18,7 +18,6 @@ react-native-test-component
 │   └── index.test.js
 ├── .eslintrc.js
 ├── .gitignore
-├── .travis.yml
 ├── README.md
 ├── babel.config.js
 ├── package.json
