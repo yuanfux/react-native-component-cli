@@ -4,7 +4,7 @@
 
 <p align="middle">
 	<img src="https://user-images.githubusercontent.com/6414178/61050130-d585d900-a418-11e9-9cf6-14b2696ac3b9.png" width="230" />
-	<img src="https://user-images.githubusercontent.com/6414178/61052197-7b3b4700-a41d-11e9-95d9-301106d10426.png" height="230" />
+	<img src="https://user-images.githubusercontent.com/6414178/72698648-02613880-3b80-11ea-842d-05436ec68ded.png" height="230" />
 </p>
 
 
@@ -16,22 +16,31 @@ Many repositories of react native component are not well structured and missing 
 4. **Stock** - No unofficial 3rd Party Lib involved / Stock React Native Dev Experience
 
 ## Install
-```bash
-$ npm install react-native-component-cli -g
-```
+### by npx (Preferred)
 
-Installing `expo-cli` is optional but **recommended**
-```
-$ npm install expo-cli -g
-```
-
-If you are using an NPM version before 5.2.0, install `npx` with the following cmd
+> If you are using an NPM version before 5.2.0, install `npx` with the following cmd
 ```
 $ npm install npx -g
 ```
 
+### by npm install
+```
+$ npm install react-native-component-cli -g
+```
+
+```
+$ npm install expo-cli -g
+```
+
 ## Usage
 ### 1. Create
+
+#### by npx (Preferred)
+```bash
+$ npx react-native-component-cli create
+```
+
+#### by npm install
 ```bash
 $ rnc create
 ```
