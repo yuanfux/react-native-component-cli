@@ -78,7 +78,7 @@ const log = (type, params) => {
     console.log();
     console.log(emoji.get('point_right'), ` ${chalk.bold('Quick Tips')}`);
     console.log();
-    console.log(`    ${chalk.bold('1.')} ${chalk.green('Install Deps')}`);
+    console.log(`    ${chalk.bold('1.')} ${chalk.green('Install')}`);
     console.log(`        • $ cd ${params.name}`);
     console.log('        • $ npm install');
     console.log();
@@ -86,7 +86,6 @@ const log = (type, params) => {
     console.log('        • $ npm test');
     console.log();
     console.log(`    ${chalk.bold('3.')} ${chalk.green('Dev / View Demo')}`);
-    console.log('        • $ cd demo');
     console.log('        • $ npm start');
     console.log();
   }

@@ -8,13 +8,10 @@ const { deleteDir } = require(path.resolve(__dirname, '../utils'));
 const FOLDER_STRUCTURE = `
 react-native-test-component
 ├── demo
-│   ├── .gitignore
-│   ├── .watchmanconfig
 │   ├── App.js
+│   ├── AppEntry.js
 │   ├── app.json
-│   ├── babel.config.js
-│   ├── metro.config.js
-│   └── package.json
+│   └── metro.config.js
 ├── src
 │   └── index.js
 ├── test
